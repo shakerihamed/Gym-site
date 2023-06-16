@@ -1,4 +1,4 @@
-# gymme-landing-starter
+# About-The-Site
 Building a sports club project with the ability to register and create a user account is fully responsive.
 What technologies and libraries are used in this site?
 1-React.js

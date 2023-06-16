@@ -4,16 +4,11 @@ import React from 'react';
 import Aos from 'aos';
 import 'aos/dist/aos.css';
 
-// import components
-import Banner from './components/Banner';
-import Header from './components/Header';
-import About from './components/About';
-import Workouts from './components/Workouts';
-import Pricing from './components/Pricing';
-import Community from './components/Community';
-import Faq from './components/Faq';
-import Join from './components/Join';
-import Footer from './components/Footer';
+
+import Layout from './components/Layout';
+import Login from './components/Login';
+import Sign_up from './components/Sign_up';
+import { Route, Routes } from 'react-router-dom';
 
 const App = () => {
   // aos initialization
@@ -23,18 +18,15 @@ const App = () => {
   })
   return (
     <div className='max-w-[1440px] mx-auto bg-page overflow-hidden relative'>
-      <Header />
-      <Banner />
-      <About />
-      <Workouts />
-      <Pricing />
-      <Community />
-      <Faq />
-      <Join />
-      <Footer />
-
       
-      ,{/* <div className='h-[4000px]'></div> */}
+    <Routes>
+      <Route path='/' element={<Layout /> } />
+      <Route path='/login' element={<Login /> } />
+      <Route path='/signup' element={<Sign_up /> } />
+
+    </Routes>
+
+      {/* <div className='h-[4000px]'></div> */}
     </div>
   );
 };

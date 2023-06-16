@@ -12,10 +12,14 @@ const Pricing = () => {
       date-aos-offset='200'
        data-aos-delay='200'
        >
+      
       <img src={icon} alt="icon" />
-      <h2 className='h2'>{title}<span className='text-primary-200'>.</span></h2>
+      <h2 className='h2'>{title}<span className='text-[#ff5722]'>.</span></h2>
     </div>
+    <p id='price'></p>
     <Planlist plans={plans} />
+
+    <span id='Community'></span>
   </section>;
 };
 

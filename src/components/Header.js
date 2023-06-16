@@ -7,6 +7,7 @@ import Nav from '../components/Nav';
 import NavMobile from '../components/NavMobile';
 //import Icons
 import {RiMenu4Fill , RiCloseFill} from 'react-icons/ri';
+import { Link } from 'react-router-dom';
 
 
 
@@ -33,16 +34,16 @@ const Header = () => {
      duration-300`}>
     {/* {logo} */}
 
-    <a href=''>
+    <a href='/'>
       <img className='h-[60px]' src={logo} alt='logo' />
-      <p className='ml-[14px] font-extrabold text-primary-200'>TIGER</p>
+      <p className='ml-[14px] font-extrabold text-[#ff5722] '>TIGER</p>
     </a>
     {/* {nav - initially hidden} */}
     <Nav />
     {/* {btns - initially hidden} */}
     <div className='hidden lg:flex space-x-4'>
-      <button className='btn btn-sm text-white hover:text-primary-200 transition'>{btnLoginText}</button>
-      <button className='btn btn-sm btn-primary'>{btnSignupText}</button>
+      <Link to='/login' className='btn btn-sm text-white hover:text-[#ff5722] transition border-[1px] border-[#ff5722] rounded-lg'>{btnLoginText}</Link>
+      <Link to='/login' className='btn btn-sm text-black bg-[#ff5722] transition-all ease-in hover:text-white hover:bg-[#c13910] rounded-lg'>{btnSignupText}</Link>
     </div>
     {/* {nav menu btn} */}
 
@@ -50,8 +51,8 @@ const Header = () => {
     onClick={() => setNavMobile(!navMobile)} 
     className='lg:hidden absolute right-4'>
         {navMobile ? (<RiCloseFill 
-        className='text-primary-200 text-3xl cursor-pointer' />) 
-        :(<RiMenu4Fill className='text-primary-200 text-3xl cursor-pointer'/>)
+        className='text-[#ff5722] text-3xl cursor-pointer' />) 
+        :(<RiMenu4Fill className='text-[#ff5722] text-3xl cursor-pointer'/>)
         } 
     </div>
     {/* {navMobile} */}

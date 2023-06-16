@@ -1,6 +1,7 @@
 import React from 'react';
 //import data
 import {nav} from '../data'
+import { Link } from 'react-router-dom';
 
 const NavMobile = ({navMobile}) => {
   return <nav className={
@@ -11,14 +12,14 @@ const NavMobile = ({navMobile}) => {
       {nav.map((item ,idx ) => {
         return(
           <li key={idx}>
-            <a className='text-white text-body-md hover:text-primary-200 ' href={item.href}>{item.name}</a>
+            <a className='text-white text-body-md hover:text-[#ff5722] ' href={item.href}>{item.name}</a>
           </li>
         )
       })}
     </ul>
     <div className='-mt-44 flex justify-center gap-x-8'>
-      <button className='btn btn-lg text-white'>Log In</button>
-      <button className='btn btn-lg btn-primary'>Sign Up</button>
+      <Link to='/login' className='btn btn-lg text-white border-[1px] border-[#ff5722] rounded-lg'>Log In</Link>
+      <Link to='/login' className='btn btn-lg rounded-lg text-white bg-[#ff5722] hover:bg-[#e44514] transition-all'>Sign Up</Link>
     </div>
   
 

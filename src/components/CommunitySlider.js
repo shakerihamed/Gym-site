@@ -17,7 +17,9 @@ const CommunitySlider = ({testimonials}) => {
     {testimonials.map((testimonial , idx) => {
       const {image , name , message} = testimonial;
       return <SwiperSlide key={idx}>
+        <p id='community'></p>
         <div className='relative'>
+        
           <div>
             <img src={image} alt='image' />
           </div>
@@ -25,7 +27,7 @@ const CommunitySlider = ({testimonials}) => {
           <div className='absolute bottom-[30px] text-white p-[20px] text-center'>
             <div className='mb-8 italic text-lg font-light'>{message}</div>
             <div className='flex items-center justify-center gap-x-[3px]'>
-            <span className='text-[30px] text-primary-200 font-bold '>~</span>
+            <span className='text-[30px] text-[#ff5722] font-bold '>~</span>
             <div className='text-[20px] font-bold'>{name}</div>
             </div>
           </div>

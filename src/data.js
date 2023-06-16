@@ -26,12 +26,12 @@ export const header = {
 };
 
 export const nav = [
-  { name: 'Home', href: '/' },
-  { name: 'About', href: '/' },
-  { name: 'Workouts', href: '/' },
-  { name: 'Pricing', href: '/' },
-  { name: 'Community', href: '/' },
-  { name: 'FAQ', href: '/' },
+  { name: 'Home', href: '/#home' },
+  { name: 'About', href: '/#about' },
+  { name: 'Workouts', href: '/#work' },
+  { name: 'Pricing', href: '/#price' },
+  { name: 'Community', href: '/#community' },
+  { name: 'FAQ', href: '/#faq' },
 ];
 
 export const banner = {
@@ -206,5 +206,5 @@ export const join = {
 
 export const footer = {
   logo: Logo,
-  copyrightText: 'All rights reserved. Gymme 2022.',
+  copyrightText: 'All rights reserved. Gymme 2023',
 };

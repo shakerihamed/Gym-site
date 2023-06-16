@@ -8,11 +8,12 @@ const About = () => {
 
   const { title , subtitle1 , subtitle2 , icon , link } = about
   return <section className='py-[80px] md:py-[110] lg:pt-[140] lg:pb-[180]'>
+    
     <div className='container mx-auto px-[20px] lg-px[135px]'>
-
+      <p id='about'></p>
       <div className='section-title-group justify-start' data-aos='fade-up' data-aos-delay='100'>
         <img src={icon} alt="icon"/>
-        <h2 className='h2 section-title'>{title}<span className='text-primary-200'>.</span></h2>
+        <h2 className='h2 section-title'>{title}<span className='text-[#ff5722]'>.</span></h2>
       </div>
       {/* {subtitle1} */}
       <p className='md:text-body-md mb-12'
@@ -29,6 +30,7 @@ const About = () => {
           </a>
       </div>
     </div>
+    <span id='work'></span>
   </section>;
 };
 

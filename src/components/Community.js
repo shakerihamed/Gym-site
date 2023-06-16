@@ -17,9 +17,9 @@ const Community = () => {
         data-aos-delay='200'
         >
           <img src={icon} alt='icon'/>
-          <h2 className='h2 section-title'>{title}<span className='text-primary-200'>.</span></h2>
+          <h2 className='h2 section-title'>{title}<span className='text-[#ff5722]'>.</span></h2>
         </div>
-        <div className='absolute -right-[375px] lg:-right-[280px] w-[1140px] top-48 lg:top-0'
+        <div className='absolute border-l-2 border-[#ff5722] -right-[375px] lg:-right-[280px] w-[1140px] top-48 lg:top-0'
         data-aos='fade-up'
         data-aos-offset='200'
         data-aos-delay='200'
@@ -28,6 +28,7 @@ const Community = () => {
         </div>
       </div>
     </div>
+    
   </section>;
 };
 

@@ -2,7 +2,7 @@ import React from 'react';
 //import data
 import { workouts } from '../data';
 //import workouts slider
-import WorkoutSlider from '../components/WorkoutSlider';
+import WorkoutSlider from './WorkoutSlider';
 
 const Workouts = () => {
 

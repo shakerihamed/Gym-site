@@ -2,7 +2,7 @@ import React from 'react';
 //import data
 import { faq } from '../data';
 
-import Accordion from '../components/Accordion';
+import Accordion from './Accordion';
 
 const Faq = () => {
   const { icon , title , accordions} = faq;

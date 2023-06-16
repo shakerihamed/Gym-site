@@ -2,7 +2,7 @@ import React from 'react';
 // import data
 import {community} from '../data';
 
-import CommunitySlider from '../components/CommunitySlider';
+import CommunitySlider from './CommunitySlider';
 
 const Community = () => {
 

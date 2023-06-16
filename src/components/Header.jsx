@@ -3,8 +3,8 @@ import { useEffect, useState } from 'react';
 //import header data
 import { header } from '../data';
 //import component 
-import Nav from '../components/Nav';
-import NavMobile from '../components/NavMobile';
+import Nav from './Nav';
+import NavMobile from './NavMobile';
 //import Icons
 import {RiMenu4Fill , RiCloseFill} from 'react-icons/ri';
 import { Link } from 'react-router-dom';
